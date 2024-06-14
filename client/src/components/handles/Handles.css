@@ -1,0 +1,76 @@
+.socials {
+    background-color: var(--color-bg);
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    border-top: 1px var(--color-blue) solid;
+    border-bottom: 1px var(--color-blue) solid;
+}
+
+.socials .icon {
+    color: var(--color-blue);
+    margin: 20px 0 20px 0;
+    height: 60px;
+    width: 60px;
+}
+
+/* =========media querries========== */
+
+@media screen and (max-width: 1200px) {
+    .socials {
+        gap: 80px;
+    }
+    
+    .socials .icon {
+        color: var(--color-blue);
+        margin: 16px 0 16px 0;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .socials {
+        gap: 60px;
+    }
+    
+    .socials .icon {
+        color: var(--color-blue);
+        margin: 14px 0 14px 0;
+        height: 45px;
+        width: 45px;
+    }
+}
+
+/* @media screen and (max-width: 620px) {
+    .socials {
+        gap: 8px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .socials .icon {
+        color: var(--color-blue);
+        margin: 6px 0 6px 0;
+        height: 20px;
+        width: 20px;
+    }
+} */
+
+@media screen and (max-width: 542px) {
+    .socials {
+        gap: 20px;
+
+    }
+
+    .socials .icon {
+        color: var(--color-blue);
+        margin: 12px 0 12px 0;
+        height: 40px;
+        width: 40px;
+    }
+}
