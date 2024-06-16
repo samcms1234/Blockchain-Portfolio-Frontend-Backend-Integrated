@@ -33,10 +33,10 @@ const Hero = () => {
         <section className="hero">
         <div className="container">
             <div className="hero-text">
-                <p><span>Saumya Srivastava </span>
-                    is a Full-Stack Blockchain Developer From India.</p>
-                <h1>I develop decentralised apps in web3 space.</h1>
-                <h3>{description}</h3>
+                <p><span>Hi, </span>
+                    I'm Saumya, a Full-Stack Blockchain Developer.</p>
+                <h1>Building the future of the decentralized web, one innovative blockchain solution at a time.</h1>
+                {/* <h3>{description}</h3> */}
                 {/*  =========popup bootstrap==========  */}
 
                 <Modal size='md' isOpen={modal} toggle={() => setModal(!modal)}>

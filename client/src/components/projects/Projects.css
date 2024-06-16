@@ -22,8 +22,7 @@
 
 .cards {
     display: flex;
-    flex-direction: row;
-    margin: 0px 80px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -34,15 +33,16 @@
 
 /* =========card========== */
 .project-card {
-    height: 390px;
-    width: 600px;
-    background-color: var(--color-blue);
+    height: 600px;
+    width: 500px;
+    background-color: #3c3c48;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 10px;
     transition: 400ms;
+    opacity: 0.8;
 }
 .project-card:hover {
     transform: scale(1.06);
@@ -60,7 +60,7 @@
 .project-card .card-img img {
     margin-top: 14px;
     border-radius: 8px;
-    width: 468px;
+    width: 99%;
     height: 274px;
 
 }
@@ -69,9 +69,13 @@
     color: white;
 }
 
+.project-section .card-text {
+    width: 100%;
+}
+
 .project-section .card-text h3 {
-    font-weight: 800;
-    text-align: center;
+    font-weight: 600;
+    text-align: left;
     margin: 12px 14px 0px 14px;
 }
 

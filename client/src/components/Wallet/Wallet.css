@@ -31,8 +31,8 @@
     height: 38px;
     text-align: center;
     background-color: var(--color-bg);
-    border: 2px solid rgb(86, 88, 226);
-    color: #007bff;
+    border: 2px solid #c4c4ca;
+    color: #c4c4ca;
     border-radius: 20px;  
     padding: 5px 0;
     cursor: pointer;
