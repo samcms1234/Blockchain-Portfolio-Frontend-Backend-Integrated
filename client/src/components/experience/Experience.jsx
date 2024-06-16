@@ -8,7 +8,7 @@ import axios from 'axios';
 const Experience = ({state}) => {
     const [education,setEducation]=useState("");
     const [experience,setExperience]=useState("");
-    const BASE_URL = 'http://localhost:5000';
+    const BASE_URL = import.meta.env.VITE_BASE_URL;
 
     useEffect(()=>{
         axios.get(BASE_URL+'/getallexperience')

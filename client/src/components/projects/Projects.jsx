@@ -7,7 +7,7 @@ import axios from 'axios';
 const Projects = ({state}) => {
     const [modal, setModal] = useState(false);
     const [projects,setProjects]=useState("");
-    const BASE_URL = 'http://localhost:5000';
+    const BASE_URL = import.meta.env.VITE_BASE_URL;
     useEffect(()=>{
         axios.get(BASE_URL+'/getallprojects')
         .then(response => {
@@ -35,7 +35,8 @@ const Projects = ({state}) => {
     return (
         <section className="project-section">
             <h1 className="title">Projects </h1>
-            {projects.length > 0 ? (
+            <div className="cards">
+            {projects.length > 0 && (
                 projects.map((project) => {
                 const githubLink = `https://github.com/samcms1234/${project.githubLink}`;
                 return (
@@ -45,7 +46,10 @@ const Projects = ({state}) => {
                             <h3>{project.title}</h3>
                         </div>
                         <div className="card-img">
-                            <img src={`https://red-keen-chicken-777.mypinata.cloud/ipfs/${project.images[0]}`} alt="" />
+                            <img src={`${import.meta.env.VITE_IPFS_GATEWAY_URL}/${project.images[0]}`} alt="" />
+                        </div>
+                        <div className="card-text">
+                            <p1>Skills Acquired: {project.skillsAcquired}</p1>
                         </div>
                         <div className="card-text">
                             <p>{project.description}</p>
@@ -54,9 +58,14 @@ const Projects = ({state}) => {
                     </div>
                 );
                 })
-                ) : (
-                    <p className='no-projects'>No projects to display</p>
                 )}
+                </div>
+
+                {projects.length == 0 && (
+                        <p className='no-projects'>No projects to display</p>
+                )
+
+                }
            
  {/*  =========popup bootstrap==========  */}
 

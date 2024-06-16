@@ -6,11 +6,12 @@ import axios from 'axios';
 
 const Contact = () => {
     const [resume,setResume]=useState("");
-    const BASE_URL = 'http://localhost:5000';
+    const BASE_URL = import.meta.env.VITE_BASE_URL;
+
     useEffect(()=>{
         axios.get(BASE_URL+'/resume')
         .then(response => {
-            setResume('https://gateway.pinata.cloud/ipfs/' + response.data.cid)
+            setResume(`${import.meta.env.VITE_IPFS_GATEWAY_URL}/` + response.data.cid)
             console.log(resume);
         })
         .catch(error => {

@@ -20,13 +20,21 @@
     width: fit-content;
 }
 
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 80px;
+    align-items: center;
+    justify-content: center;
+}
+
 /* .title {
     margin-top: 90px;
 } */
 
 /* =========card========== */
 .project-card {
-    height: 500px;
+    height: 390px;
     width: 600px;
     background-color: var(--color-blue);
     display: flex;
@@ -76,12 +84,7 @@
 }
 
 .project-section .card-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: 100px;
-    justify-content: center;
-    gap: 70px;
+    margin: 60px;
 }
 
 .project-section .donate{

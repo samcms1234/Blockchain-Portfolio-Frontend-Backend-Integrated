@@ -6,12 +6,13 @@ const Skills = () => {
   const [imageSrcs, setImageSrcs] = useState([]);
   const iconNames = ['ethereum', 'ganache', 'bitcoin', 'reactjs', 'chainlink', 'truffle', 'nft', 'sass'];
 
-
   useEffect(() => {
     const fetchImages = async () => {
       const promises = iconNames.map(async (iconName) => {
         try {
-          const response = await fetch(`https://red-keen-chicken-777.mypinata.cloud/ipfs/QmckMFzCsrpV3MJppWmnffWBe6C1JbcSWr1juW6be8NLpN/${iconName}.png`);
+          const response = await fetch(
+            `${import.meta.env.VITE_IPFS_GATEWAY_URL}/QmckMFzCsrpV3MJppWmnffWBe6C1JbcSWr1juW6be8NLpN/${iconName}.png`
+          );
           if (response.ok) {
             const blob = await response.blob();
             return URL.createObjectURL(blob);

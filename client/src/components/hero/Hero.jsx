@@ -9,7 +9,8 @@ const Hero = () => {
     const [modal, setModal] = useState(false);
     const [description,setDescription]=useState("");
     const [cid,setCid]=useState("");
-    const BASE_URL = 'http://localhost:5000';
+    const BASE_URL = import.meta.env.VITE_BASE_URL;
+
     useEffect(()=>{
       axios.get(BASE_URL+'/fetchprofile')
       .then(response => {
@@ -56,7 +57,7 @@ const Hero = () => {
             <div className="hero-img">
 
                 <div className="img-container">
-                    <img src={`https://red-keen-chicken-777.mypinata.cloud/ipfs/${cid}`} alt="profilePhoto" />
+                    <img src={`${import.meta.env.VITE_IPFS_GATEWAY_URL}/${cid}`} alt="profilePhoto" />
                 </div>
             </div>
         </div>

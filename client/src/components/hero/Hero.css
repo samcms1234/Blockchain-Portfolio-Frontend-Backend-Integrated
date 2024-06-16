@@ -13,6 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-image: url(Stars.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
 }
 
 .container {
@@ -50,7 +54,7 @@
 }
 
 .hero-text p span {
-    color: var(--color-blue);
+    color: var(--color-cyan);
     font-size: 16px;
     font-weight: 400;
 
