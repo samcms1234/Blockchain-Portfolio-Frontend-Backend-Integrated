@@ -114,65 +114,8 @@
 }
 
 /* =========media querries========== */
-@media screen and (max-width: 420px) {
-
-    .hero {
-        flex-direction: column-reverse;
-        height: auto;
-    }
-
-    .container {
-        flex-direction: column-reverse !important;
-        justify-content: center;
-        gap: 20px !important;
-    }
-
-    .hero-img {
-        margin: 0 auto;
-
-    }
-
-    .hero-img .img-container img {
-        width: 300px;
-        margin-top: 40px;
-    }
-
-    .hero-text {
-        width: 100%;
-        margin-top: 40px;
-        padding: 0 20px 0 20px;
-        text-align: center;
-
-    }
-
-    .hero-text p {
-        font-size: 12px;
-    }
-
-    .hero-text p span {
-        font-size: 14px;
-    }
-
-    .hero-text h1 {
-        font-size: 24px;
-
-    }
-
-    .hero-text h3 {
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
 
 @media screen and (max-width: 1200px) {
-
-    .hero-text p {
-        font-size: 12px;
-    }
-    
-    .hero-text p span {
-        font-size: 20px;
-    }
 
     .hero-text h1 {
 
@@ -203,5 +146,94 @@
 
     .hero-text .msg-btn:hover {
         background-color: var(--color-bg);
+    }
+}
+
+@media screen and (max-width: 1075px) {
+
+    .hero-text h1 {
+        margin-top: 10px;
+        font-size: 22px;
+    
+    }
+    
+    .hero-text h3 {
+        margin-top: 16px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 28px;
+        opacity: 0.75;
+    }
+
+    .hero-text .msg-btn {
+        margin-top: 32px;
+        color: white;
+        font-weight: 400;
+        background-color: var(--color-blue);
+        font-size: 10px;
+        height: 30px;
+        width: 140px;
+        border: 2px solid rgb(86, 88, 226);
+        border-radius: 20px 0 20px 0px;
+    }
+
+    .hero-text .msg-btn:hover {
+        background-color: var(--color-bg);
+    }
+
+    .hero-img .img-container img {
+        width: 250px;
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column-reverse !important;
+        justify-content: center;
+        gap: 20px !important;
+    }
+
+    .hero-img {
+        margin: 0 auto;
+
+    }
+
+    .hero-img .img-container img {
+        width: 300px;
+        margin-top: 40px;
+    }
+
+    .hero-text {
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 20px 0 20px;
+        text-align: left;
+
+    }
+
+    .hero-text p {
+        font-size: 12px;
+    }
+
+    .hero-text p span {
+        font-size: 14px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+
+    }
+
+    .hero-text h3 {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
