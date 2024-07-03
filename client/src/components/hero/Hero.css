@@ -55,15 +55,14 @@
 
 .hero-text p span {
     color: var(--color-cyan);
-    font-size: 16px;
+    font-size: 28px;
     font-weight: 400;
 
 }
 
 .hero-text h1 {
-
-    margin-top: 12px;
-    font-size: 48px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
 
 }
 
@@ -73,6 +72,8 @@
     font-weight: 400;
     line-height: 28px;
     opacity: 0.75;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .hero-text .msg-btn {
@@ -149,11 +150,11 @@
     }
 
     .hero-text p span {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .hero-text h1 {
-        font-size: 32px;
+        font-size: 24px;
 
     }
 
@@ -170,13 +171,13 @@
     }
     
     .hero-text p span {
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .hero-text h1 {
 
         margin-top: 12px;
-        font-size: 32px;
+        font-size: 28px;
     
     }
     

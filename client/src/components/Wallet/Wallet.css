@@ -30,18 +30,18 @@
     width: 100px;
     height: 38px;
     text-align: center;
-    background-color: var(--color-bg);
-    border: 2px solid rgb(86, 88, 226);
-    color: #007bff;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #f8f9fa;
     border-radius: 20px;  
     padding: 5px 0;
     cursor: pointer;
+    transition: all ease 0.5s;
 } 
 
 
 
 .menuItems a {
-    color: #007bff;
     text-decoration: none;
     margin: 0px;
 }
@@ -53,11 +53,12 @@
 
 .menuItems a:hover{
     color: white !important;
+    transition: all 0.3 ease;
 }
 .menuItems:hover{
-    color: white;
-    background-color: var(--color-blue);
-    transition: 0.5s;
+    color: #ffffff;
+    background-color: rgb(16, 170, 170);
+    transition: 0.5s ease;
 }
 
 .connectBTN {
@@ -65,19 +66,34 @@
     height: 38px;
     font-size: 14px;
     font-weight: 400;
-    color: #007bff;
+    color: #f8f9fa;
     font-weight: 400;
-    background-color: var(--color-bg);
-    border: 2px solid rgb(86, 88, 226);
+    background-color: #212529;
+    border: 2px solid #495057;
     border-radius: 20px;
+    transition: ease 0.2s;
 }
 .connectBTN a:hover{
-    color: white !important;
+    color: #ffffff !important;
 }
 .connectBTN:hover{
-    color: white;
-    background-color: var(--color-blue);
-    transition: 0.1s;
+    color: #ffffff;
+    background-color: #007bff;
+    transition: all ease 0.5s;
+    border-color: #6c757d;
+}
+
+.connectBTN-Disabled {
+    width: 160px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #007bff;
+    border: 2px solid #6c757d;
+    border-radius: 20px;
+    transition: ease 0.2s;
 }
 /* =========media querries========== */
 @media screen and (max-width: 420px) {
