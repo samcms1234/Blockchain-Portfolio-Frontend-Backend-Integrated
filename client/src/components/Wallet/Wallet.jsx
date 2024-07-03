@@ -5,7 +5,7 @@ import { contractAddress } from "../utils/contracts-config";
 import './Wallet.css';
 
 const Wallet =({saveState})=>{
-      const [connected,setConnected]=useState(true);
+      const [connected,setConnected]=useState(false);
       const isAndroid = /android/i.test(navigator.userAgent);
       const init =async()=>{
       try{
@@ -15,7 +15,7 @@ const Wallet =({saveState})=>{
             ABI.abi,
             contractAddress
         );
-         setConnected(false);
+         setConnected(true);
          saveState({web3:web3,contract:contract});
       }catch(error){
         alert("Please Install Metamask");
@@ -33,7 +33,12 @@ const Wallet =({saveState})=>{
       {isAndroid  && <button className="connectBTN">
          <a href="https://metamask.app.link/dapp/sriche.netlify.app/">Click For Mobile</a>
         </button>  } 
-       <button className="connectBTN" onClick={init} disabled={!connected}> {connected? "Connect Metamask":"Connected"}</button>
+      {
+        connected ?
+        <button className="connectBTN-Disabled" disabled={connected}>Connected</button>
+        :
+        <button className="connectBTN" onClick={init}>Connect Metamask</button>
+      }
       </div>
       </>
 }
