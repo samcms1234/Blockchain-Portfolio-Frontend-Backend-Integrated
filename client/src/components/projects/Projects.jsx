@@ -36,12 +36,12 @@ const Projects = ({state}) => {
         <section className="project-section">
             <h1 className="title">Projects </h1>
             <div className="cards">
-            {projects.length > 0 && (
+                {projects.length > 0 && (
                 projects.map((project) => {
-                const githubLink = `https://github.com/samcms1234/${project.githubLink}`;
-                return (
-                    <div className="card-wrapper">
-                    <a href={githubLink} className="project-card" target='_blank' rel="noopener noreferrer" key={project.githubLink}>
+                    const githubLink = `https://github.com/samcms1234/${project.githubLink}`;
+                    return (
+                    <div className="card-wrapper" key={project.githubLink}>
+                        <a href={githubLink} className="project-card" target="_blank" rel="noopener noreferrer">
                         <div className="card-text">
                             <h3>{project.title}</h3>
                         </div>
@@ -49,23 +49,23 @@ const Projects = ({state}) => {
                             <img src={`${import.meta.env.VITE_IPFS_GATEWAY_URL}/${project.images[0]}`} alt="" />
                         </div>
                         <div className="card-text">
-                            <p1>Skills Acquired: {project.skillsAcquired}</p1>
+                            <p>Skills Acquired: {project.skillsAcquired}</p>
                         </div>
                         <div className="card-text">
                             <p>{project.description}</p>
                         </div>
-                    </a>
+                        </a>
                     </div>
-                );
+                    );
                 })
                 )}
-                </div>
+            </div>
 
-                {projects.length == 0 && (
-                        <p className='no-projects'>No projects to display</p>
-                )
+            {projects.length == 0 && (
+                    <p className='no-projects'>No projects to display</p>
+            )
 
-                }
+            }
            
  {/*  =========popup bootstrap==========  */}
 

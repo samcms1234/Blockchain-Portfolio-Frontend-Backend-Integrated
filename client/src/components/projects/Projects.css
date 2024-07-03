@@ -21,10 +21,10 @@
 }
 
 .cards {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 /* .title {
@@ -126,7 +126,6 @@ background-color:var(--color-blue);
     .project-section {
         padding-top: 60px;
         height: 100%;
-        gap: 70px;
         padding: 60px 80px 20px 80px;
     }
     .project-section .title {
@@ -136,17 +135,30 @@ background-color:var(--color-blue);
     .project-section .donate{
         font-size: 14px;
     }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 970px) {
     .project-section {
         padding-top: 60px;
         height: 100%;
-        gap: 70px;
         padding: 50px 80px 20px 80px;
     }
     .project-section .title {
         font-size: 18px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -154,12 +166,18 @@ background-color:var(--color-blue);
     .project-section {
         padding-top: 60px;
         height: 100%;
-        gap: 70px;
         padding: 40px 80px 20px 80px;
     }
     .project-section .donate{
         font-size: 12px;
         padding: 6px 20px 6px 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
