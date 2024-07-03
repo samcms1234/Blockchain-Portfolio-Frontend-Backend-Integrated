@@ -62,7 +62,6 @@
 
 .hero-text h1 {
     font-family: "Open Sans", sans-serif;
-    margin-top: 12px;
     font-size: 40px;
 
 }
@@ -73,6 +72,8 @@
     font-weight: 400;
     line-height: 28px;
     opacity: 0.75;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .hero-text .msg-btn {

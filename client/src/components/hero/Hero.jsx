@@ -33,10 +33,9 @@ const Hero = () => {
         <section className="hero">
         <div className="container">
             <div className="hero-text">
-                <p><span>Hi, </span>
-                    I'm Saumya, a Full-Stack Blockchain Developer.</p>
-                <h1>Building the future of the decentralized web, one innovative blockchain solution at a time.</h1>
-                {/* <h3>{description}</h3> */}
+            <img className='typing-image' src="https://readme-typing-svg.demolab.com?font=Open+Sans&pause=1000&color=00FFFF&random=false&width=600&height=40&lines=Hi%2C+I'm+Saumya%2C+a+Full-Stack+Blockchain+Developer." alt="Typing SVG" />
+            <h1>Building the future of the decentralized web, one innovative blockchain solution at a time.</h1>
+            
                 {/*  =========popup bootstrap==========  */}
 
                 <Modal size='md' isOpen={modal} toggle={() => setModal(!modal)}>
