@@ -6,6 +6,8 @@ import './Wallet.css';
 
 const Wallet =({saveState})=>{
       const [connected,setConnected]=useState(false);
+      const [menuOpen, setMenuOpen] = useState(false);
+
       const isAndroid = /android/i.test(navigator.userAgent);
       const init =async()=>{
       try{
@@ -22,13 +24,23 @@ const Wallet =({saveState})=>{
       }
         
       }
+
+      const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+      };
+      
       return<>
       <div className="header">
-        <div className="Menu">
-          <div className="menuItems"><a>Home</a></div>
-          <div className="menuItems"><a>Projects</a></div>
-          <div className="menuItems"><a>Experience</a></div>
-          <div className="menuItems"><a>Contact me</a></div>
+        <button className="menuToggle" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div className={`Menu ${menuOpen ? 'show' : ''}`}>
+          <div className="menuItems"><a href="#">Home</a></div>
+          <div className="menuItems"><a href="#">Projects</a></div>
+          <div className="menuItems"><a href="#">Experience</a></div>
+          <div className="menuItems"><a href="#">Contact me</a></div>
         </div>
       {isAndroid  && <button className="connectBTN">
          <a href="https://metamask.app.link/dapp/sriche.netlify.app/">Click For Mobile</a>
