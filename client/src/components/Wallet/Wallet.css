@@ -95,6 +95,11 @@
     border-radius: 20px;
     transition: ease 0.2s;
 }
+
+.connectBTN-Disabled:hover {
+    background-color: transparent;
+    transition: all ease 0.1s;
+}
 /* =========media querries========== */
 @media screen and (max-width: 420px) {
 
@@ -113,5 +118,4 @@
 
 @media screen and (max-width: 1130px) {
     
-    .
 }
