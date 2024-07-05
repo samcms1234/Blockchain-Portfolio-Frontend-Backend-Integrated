@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react'
 import { FaDonate } from 'react-icons/fa';
 import { Modal, ModalHeader, ModalBody, Row, Button } from "reactstrap"
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import "./Projects.css"
 import axios from 'axios';
 
@@ -39,17 +40,28 @@ const Projects = ({state}) => {
                 {projects.length > 0 && (
                 projects.map((project) => {
                     const githubLink = `https://github.com/samcms1234/${project.githubLink}`;
+                    let skills = project.skillsAcquired.split(",");
                     return (
                     <div className="card-wrapper" key={project.githubLink}>
-                        <a href={githubLink} className="project-card" target="_blank" rel="noopener noreferrer">
-                        <div className="card-text">
+                        <a className="project-card" target="_blank" rel="noopener noreferrer">
+                        <div className="card-text" style={{justifyContent: 'space-between'}}>
                             <h3>{project.title}</h3>
+                            <div className='card-links' style={{marginTop: '9px'}}>
+                                <a href={githubLink}><FaGithub style={{height:'30px', width: '30px'}} /></a>
+                                <a href={project.liveLink}><FaExternalLinkAlt style={{height:'30px', width: '30px'}} /></a>
+                            </div>
                         </div>
                         <div className="card-img">
                             <img src={`${import.meta.env.VITE_IPFS_GATEWAY_URL}/${project.images[0]}`} alt="" />
                         </div>
                         <div className="card-text">
-                            <p>Skills Acquired: {project.skillsAcquired}</p>
+                            {
+                                skills.map((skill) => {
+                                    return (
+                                        <div className='pills'>{skill}</div>
+                                    )
+                                })
+                            }
                         </div>
                         <div className="card-text">
                             <p>{project.description}</p>

@@ -67,24 +67,38 @@
 .card-wrapper a{
     text-decoration: none;
     color: white;
+    padding: 10px;
 }
 
 .project-section .card-text {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .project-section .card-text h3 {
     font-weight: 600;
+    font-family: cursive;
     text-align: left;
+    padding: 0px 10px;
     margin: 12px 14px 0px 14px;
+    color: #ffffff; 
+    font-size: 1.8em; 
+    line-height: 1.4;
 }
+
 
 .project-section .card-text p {
     margin: 10px 14px 0px 14px;
     font-weight: 300;
     text-align: center;
     opacity: 0.8;
-
+    color: #e0e0e0; 
+    font-size: 1.1em; 
+    line-height: 1.6;
 }
 
 .project-section .card-wrapper {
@@ -108,6 +122,20 @@ background-color:var(--color-blue);
     width: 18px;
     height: 18px;
    margin-left: 8px;
+}
+
+.pills {
+    background-color: #056BB2; 
+    color: #ffffff;      
+    font-size: 0.75rem;  
+    font-weight: 500;  
+    margin-right: 0.5rem;    
+    margin-top: 0.5rem;    
+    align-content: center; 
+    padding: 0.125rem 0.625rem;
+    height: 2rem;
+    border-radius: 9999px; 
+    width: auto;
 }
 
 .no-projects {
