@@ -1,0 +1,16 @@
+.vanta-style-config {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+}
+
+@media screen and (max-width: 580px) {
+    .vanta-style-config {
+        left: 0;
+        top: 0;
+    }
+}
