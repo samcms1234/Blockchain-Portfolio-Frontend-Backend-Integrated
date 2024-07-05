@@ -42,9 +42,9 @@ const Wallet =({saveState})=>{
           <div className="menuItems"><a href="#">Experience</a></div>
           <div className="menuItems"><a href="#">Contact me</a></div>
         </div>
-      {isAndroid  && <button className="connectBTN">
+      {/* {isAndroid  && <button className="connectBTN">
          <a href="https://metamask.app.link/dapp/sriche.netlify.app/">Click For Mobile</a>
-        </button>  } 
+        </button>  }  */}
       {
         connected ?
         <button className="connectBTN-Disabled" disabled={connected}>Connected</button>
