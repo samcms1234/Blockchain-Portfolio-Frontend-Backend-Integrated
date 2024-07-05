@@ -21,7 +21,7 @@ const LandingPage = ({ children }) => {
       color: 0xb38f96,
       backgroundColor: 0x1a1a2e,
       points: 7.00,
-      maxDistance: 10.00,
+      maxDistance: 15.00,
       spacing: 15.00,
       showDots: false,
     });
