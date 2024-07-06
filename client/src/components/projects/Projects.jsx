@@ -97,7 +97,7 @@ const Projects = ({state}) => {
                         </ModalBody>
                     </Modal>
                     {/*  =========popup bootstrap end==========  */}
-                    <p className='donate' onClick={() => setModal(true)}>Appreciate our work? Support us with an ETH donation <FaDonate className='icon' /></p>
+                    <p className='donate' onClick={() => setModal(true)}>Appreciate our work? Support us<FaDonate className='icon' /></p>
         </section>
     )
 }
