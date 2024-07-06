@@ -8,7 +8,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 70px;
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .exp-section .title {
@@ -18,6 +18,8 @@
     border-bottom-style: solid;
     border-bottom-width: 2px;
     width: fit-content;
+    font-family: Montserrat;
+
 }
 
 .container {
@@ -38,6 +40,7 @@
 
 .education .edu-card {
     width: 500px;
+    height: auto;
     background-color: var(--color-card);
     padding: 24px 24px 24px 24px;
     display: flex;
@@ -61,7 +64,7 @@
 }
 
 .edu-card .card-text2 {
-    color: var(--color-blue);
+    color: #ffff;
     font-weight: 500;
     font-size: 22px;
 
@@ -73,7 +76,21 @@
     font-size: 14px;
     line-height: 22px;
     opacity: 0.9;
+    display: flex;
+    flex-wrap: wrap;
 
+}
+
+.edu-card .card-text3 .pills {
+    background: linear-gradient(to right bottom, #4fd1c5, #38a89d, #0e9b8e);    font-size: 0.75rem;  
+    font-weight: 500;  
+    margin-right: 0.5rem;    
+    margin-top: 0.5rem;    
+    align-content: center; 
+    padding: 0.125rem 0.625rem;
+    height: 2rem;
+    border-radius: 9999px; 
+    width: auto;
 }
 
 .edu-card .card-text4 {
@@ -83,6 +100,11 @@
     opacity: 0.7;
 
 }
+
+@media screen and (max-width: 1200px) {
+    .exp-section {
+        padding-top: 60px;
+    }}
 
 
 @media screen and (max-width: 420px) {

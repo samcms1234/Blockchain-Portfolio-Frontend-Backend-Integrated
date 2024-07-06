@@ -45,10 +45,22 @@ const Experience = ({state}) => {
                             <SlCalender className='icon' /> {edu.startingYear} - {edu.endYear}
                         </p>
                         <h3 className="card-text2">{edu.degree}</h3>
-                        <p className="card-text3">{edu.skillsAcquired[0]}</p>
                         <p className="card-text4">
                         {edu.collegeName}
                         </p>
+                        <p className="card-text3">
+                            {
+                                edu.skillsAcquired.map((skill) => {
+                                    return (
+                                        <div className="pills">{skill}</div>
+                                    )
+                                })
+                            }
+                        </p>
+                        <p>
+                        {edu.description}
+                        </p>
+                        
                     </div>)
                     })}
                  
@@ -63,11 +75,20 @@ const Experience = ({state}) => {
                                 <p className="card-text1">
                                     <SlCalender className='icon' /> {experience.startingTime} - {experience.endTime}
                                 </p>
-                                <h3 className="card-text2">{experience.position}</h3>
-                                <p className="card-text3">{experience.description}</p>
+                                <h3 className="card-text2">{experience.companyName}</h3>
                                 <p className="card-text4">
-                                    Code Eater
+                                    {experience.position}
                                 </p>
+                                <div className="card-text3">
+                                {
+                                    experience.knowledgeAcquired.map((exp) => {
+                                        return (
+                                            <div className="pills">{exp}</div>
+                                        )
+                                    })
+                                }
+                                </div>
+                                <p style={{marginTop: '20px'}}>{experience.description}</p>
                             </div>
                         )
                     })}
