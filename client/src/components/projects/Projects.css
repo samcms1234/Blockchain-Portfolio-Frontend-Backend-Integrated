@@ -18,6 +18,7 @@
     border-bottom-style: solid;
     border-bottom-width: 2px;
     width: fit-content;
+    font-family: Montserrat;
 }
 
 .cards {
@@ -105,17 +106,25 @@
     margin: 60px;
 }
 
-.project-section .donate{
-    cursor: pointer;
+.project-section .donate {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
+    color: #f8f9fa;
     padding: 8px 24px 8px 24px;
+    background-color: #212529;
+    border: 2px solid #495057;
     border-radius: 20px;
-    border: 1px solid var(--color-blue);
-    opacity: 0.9;
+    transition: ease 0.2s;
+    cursor: pointer;
 }
-.donate:hover{
-background-color:var(--color-blue);
+.project-section .donate p:hover{
+    color: #ffffff !important;
+}
+.project-section .donate:hover{
+    color: #ffffff;
+    background-color: #007bff;
+    transition: all ease 0.5s;
+    border-color: #6c757d;
 }
 
 .project-section .icon{
