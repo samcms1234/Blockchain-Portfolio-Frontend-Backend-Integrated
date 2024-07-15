@@ -15,22 +15,20 @@ function App() {
   const saveState=(state)=>{
     console.log(state);
     setState(state);
-  }
+  };
 
   return (
     <>
       <Wallet saveState={saveState}></Wallet>
-      <Hero />
-      <Handles />
-      <Projects state={state} />
-      <Skills />
-      <Experience state={state} />
-      <Contact/>
+      <div id="hero"><Hero /></div>
+      <div id="handles"><Handles /></div>
+      <div id="projects"><Projects state={state} /></div>
+      <div id="skills"><Skills /></div>
+      <div id="experience"><Experience state={state} /></div>
+      <div id="contact"><Contact /></div>
       <Handles />
     </>
   );
 }
 
 export default App;
-
-
