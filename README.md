@@ -13,29 +13,23 @@ Decentralize Portfolio is a decentralized application (DApp) built on the Ethere
 
 ## Installation
 
-### For Starter Project
+### For Frontend
 
-To run the Decentralize Portfolio starter project locally, follow these steps:
+To run the Blockchain Portfolio project locally, follow these steps:
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/kshitijofficial/Decentralize-Portfolio.git
+   git clone https://github.com/samcms1234/Blockchain-Portfolio-Frontend-Backend-Integrated.git
    ```
 
-2. Navigate to the starterCode directory:
-
-   ```bash
-   cd Decentralize-Portfolio/starterCode
-   ```
-
-3. Navigate to the client directory:
+2. Navigate to the client directory:
 
    ```bash
    cd client
    ```
 
-4. Install the required dependencies:
+3. Install the required dependencies:
 
    ```bash
    npm install
@@ -47,45 +41,7 @@ To run the Decentralize Portfolio starter project locally, follow these steps:
    npm run dev
    ```
 
-6. Open your browser and visit `http://localhost:5173` to access the Decentralize Portfolio starter application.
-
-### For Final Project
-
-To run the Decentralize Portfolio final project locally, follow these steps:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/kshitijofficial/Decentralize-Portfolio.git
-   ```
-
-2. Navigate to the finalCode directory:
-
-   ```bash
-   cd Decentralize-Portfolio/finalCode
-   ```
-
-3. Navigate to the client directory:
-
-   ```bash
-   cd client
-   ```
-
-4. Install the required dependencies:
-
-   ```bash
-   npm install
-   ```
-
-5. To run the application:
-
-   ```bash
-   npm run dev
-   ```
-
-6. Open your browser and visit `http://localhost:5173` to access the Decentralize Portfolio final application.
-
-**Note:** For the final project, make sure to click on the "Connect Metamask" button and use the Polygon testnet network for interacting with the decentralized application.
+6. Open your browser and visit `http://localhost:5173` to access the font-end of the Blockchain Portfolio application.
 
 ## Acknowledgements
 
