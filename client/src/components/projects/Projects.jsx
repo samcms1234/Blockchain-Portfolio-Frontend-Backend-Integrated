@@ -47,8 +47,8 @@ const Projects = ({state}) => {
                         <div className="card-text" style={{justifyContent: 'space-between'}}>
                             <h3>{project.title}</h3>
                             <div className='card-links' style={{marginTop: '9px'}}>
-                                <a href={githubLink} target="_blank"><FaGithub style={{height:'30px', width: '30px'}} /></a>
-                                <a href={project.liveLink} target="_blank"><FaExternalLinkAlt style={{height:'30px', width: '30px'}} /></a>
+                                <a href={githubLink} target="_blank"><FaGithub className="icon-small" style={{height:'30px', width: '30px'}} /></a>
+                                <a href={project.liveLink} target="_blank"><FaExternalLinkAlt className="icon-small" style={{height:'30px', width: '30px'}} /></a>
                             </div>
                         </div>
                         <div className="card-img">
