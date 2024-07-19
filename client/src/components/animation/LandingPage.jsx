@@ -32,7 +32,7 @@ const LandingPage = ({ children }) => {
   }, []);
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100vh', backgroundColor: '#1a1a2e' }}>
+    <div className='background'>
       <div className='vanta-style-config' ref={vantaRef}></div>
       <div style={{ position: 'relative', zIndex: 1 }}>
         {children}
