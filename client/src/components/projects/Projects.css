@@ -146,6 +146,8 @@
     height: 2rem;
     border-radius: 9999px; 
     width: auto;
+    text-align: center;
+    justify-content: center;
 }
 
 .no-projects {
