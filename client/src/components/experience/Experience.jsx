@@ -57,7 +57,7 @@ const Experience = ({state}) => {
                                 })
                             }
                         </p>
-                        <p>
+                        <p className="description">
                         {edu.description}
                         </p>
                         
@@ -88,7 +88,7 @@ const Experience = ({state}) => {
                                     })
                                 }
                                 </div>
-                                <p style={{marginTop: '20px'}}>{experience.description}</p>
+                                <p className="description" style={{marginTop: '20px'}}>{experience.description}</p>
                             </div>
                         )
                     })}
