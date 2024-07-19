@@ -44,10 +44,10 @@ const Wallet =({saveState})=>{
           <span></span>
         </button>
         <div className={`Menu ${menuOpen ? 'show' : ''}`}>
-          <div className="menuItems" onClick={() => handleScroll('hero')}><a href="#">Home</a></div>
-          <div className="menuItems" onClick={() => handleScroll('projects')}><a href="#">Projects</a></div>
-          <div className="menuItems" onClick={() => handleScroll('experience')}><a href="#">Experience</a></div>
-          <div className="menuItems" onClick={() => handleScroll('contact')}><a href="#">Contact me</a></div>
+          <div className="menuItems" onClick={() => handleScroll('hero')}><a>Home</a></div>
+          <div className="menuItems" onClick={() => handleScroll('projects')}><a>Projects</a></div>
+          <div className="menuItems" onClick={() => handleScroll('experience')}><a>Experience</a></div>
+          <div className="menuItems" onClick={() => handleScroll('contact')}><a>Contact me</a></div>
         </div>
         {
           connected ?

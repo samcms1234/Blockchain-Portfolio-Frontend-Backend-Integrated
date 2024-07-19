@@ -79,7 +79,6 @@
     opacity: 0.9;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .edu-card .card-text3 .pills {
@@ -109,6 +108,10 @@
 
 
 @media screen and (max-width: 420px) {
+    .exp-section {
+        gap: 30px;
+    }
+
     .exp-section .title {
         font-size: 24px;
     }
@@ -118,6 +121,10 @@
 
         flex-direction: column;
         margin-bottom: 40px;
+    }
+
+    .education {
+        margin-top: 40px;
     }
 
     /* card */
@@ -144,8 +151,24 @@
     .edu-card .card-text3 {
         font-size: 12px;
         line-height: 18px;
+        flex-wrap: wrap;
     }
 
+    .edu-card .card-text3 .pills {
+        font-weight: 500;  
+        align-content: center; 
+        padding: 0.125rem 0.625rem;
+        border-radius: 9999px; 
+        width: auto;
+        font-size: 0.6rem;
+        height: 1.5rem;
+        align-content: center; 
+        text-align: center;
+        justify-content: center;
+    }
+    .edu-card .description {
+        font-size: 0.8em;
+    }
     .edu-card .card-text4 {
         font-size: 14px;
     }
