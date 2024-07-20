@@ -137,13 +137,13 @@
 .pills {
     background-color: #056BB2; 
     color: #ffffff;      
-    font-size: 0.75rem;  
+    font-size: 0.6rem;
     font-weight: 500;  
     margin-right: 0.5rem;    
     margin-top: 0.5rem;    
     align-content: center; 
     padding: 0.125rem 0.625rem;
-    height: 2rem;
+    height: 1.5rem;
     border-radius: 9999px; 
     width: auto;
     text-align: center;
